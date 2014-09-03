@@ -60,7 +60,7 @@ For any given release we support (see cloudfoundry.releases) you should be able
 to generate an example of the bundle we'll deploy and manage by doing:
 
     . .tox/py27/bin/activate
-    python charmgen.generator <release>
+    python charmgen/generator.py <release-number>
 
 This will create a cloudfoundry-r<release> directory with the bundle.yaml and a
 trusty repo will all the created charms.
