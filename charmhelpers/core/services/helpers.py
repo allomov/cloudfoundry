@@ -45,7 +45,7 @@ class RelationContext(dict):
         """
         Returns True if all of the `required_keys` are available from any units.
         """
-        ready = len(self.get(self.name, [])) > 0
+        ready = !!self.get(self.name, [])
         if not ready:
             hookenv.log('Incomplete relation: {}'.format(self.__class__.__name__), hookenv.DEBUG)
         return ready
