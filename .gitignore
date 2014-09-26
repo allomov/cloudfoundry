@@ -41,7 +41,12 @@ output/*/index.html
 
 # Sphinx
 docs/_build
-.bzr
+.ropeproject
 
+# pyenv
 .python-version
+
+# Generated test charms
+cloudfoundry-r*
+output-v*.yaml
 
